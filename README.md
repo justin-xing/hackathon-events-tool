@@ -1,2 +1,2 @@
 ## The Hackadex!
-A pokedex themed display for hackathon events since we're all pokenerds
+a pokedex themed display for hackathon events since we're all pokenerds
