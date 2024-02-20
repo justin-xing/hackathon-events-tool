@@ -1,0 +1,58 @@
+.wrapper {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 100px;
+    transform: skew(-45deg);
+    width: 180px;
+    background-color: #DB3C36;
+    display: flex;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #971c20;
+    .bigCircle {
+        transform: skew(45deg);
+        position:relative;
+        left: 10px;
+        height: 80px;
+        width: 80px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .smallCircle {
+            height: 68px;
+            width: 68px;
+            background-color: #28AAFD;
+            border-radius: 50%;
+        }
+    }
+    .dotGroup {
+        transform: skew(45deg);
+        position:relative;
+        top: 10px;
+        left: 60px;
+        display: flex;
+        gap: 10px;
+        width: 100px;
+        .dotOne {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: #BE0524;
+        }
+        .dotTwo{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: #FEEF8D;
+        }
+        .dotThree{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: #65AF71;
+        }
+    }
+}

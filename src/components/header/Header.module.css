@@ -1,0 +1,30 @@
+.header {
+    background-color: #DB3C36;
+    color: #FBC405;
+    font-family: Oswald;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #971c20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99999;
+    height: 80px;
+}
+
+@media screen and (max-width: 899px) {
+    .header {
+        width: 97vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
+}
+@media screen and (min-width: 900px) {
+    .header {
+        width: 95vw;
+        gap: 20px;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
+}
