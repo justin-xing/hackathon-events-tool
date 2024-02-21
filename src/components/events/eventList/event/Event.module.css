@@ -2,30 +2,59 @@
     text-decoration: none;
 }
 
+@media screen and (max-width: 999px) {
+    .wrapper {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .wrapper {
+        width: 50vw;
+    }
+}
+
 .wrapper {
+    padding: 40px;
     font-family: "Press Start 2P", system-ui;
     background-color: white;
     border-radius: 10px;
-    width: 1000px;
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 0.5fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+    display: flex;
+    gap: 30px;
     align-items: center;
     border-width: 2px;
     border-style: solid;
     .time {
-        color: black;
-        grid-column: 1 / 1;
-        grid-row: 2 / 2;
+        color: #3A3B3C;
         margin-left: 30px;
+        font-size: small;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
     .name {
         color: black;
-        grid-column: 2 / 3;
-        grid-row: 2 / 2;
+        font-size: larger;
+        flex-grow: 3;
+        line-height: 1.6;
     }
+    .eventType {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .eventTypeName {
+            text-align: center;
+            white-space: nowrap;
+        }
+        .head {
+            height: 100px;
+            width: 100px;
+        }
+    }
+
 }
 
 .wrapper:hover {
