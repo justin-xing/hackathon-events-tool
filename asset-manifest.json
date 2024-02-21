@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/hackathon-event-tool/static/css/main.907908bc.css",
+    "main.js": "/hackathon-event-tool/static/js/main.b6fbdd71.js",
+    "static/js/592.1c7baf0f.chunk.js": "/hackathon-event-tool/static/js/592.1c7baf0f.chunk.js",
+    "static/media/bulbasaurHead.webp": "/hackathon-event-tool/static/media/bulbasaurHead.3988d60e89d9be12a432.webp",
+    "static/media/squirtleHead.webp": "/hackathon-event-tool/static/media/squirtleHead.cc7264360f9ecacb2245.webp",
+    "static/media/bulbasaur.png": "/hackathon-event-tool/static/media/bulbasaur.fce04e0ae89df736ce39.png",
+    "static/media/charmanderHead.webp": "/hackathon-event-tool/static/media/charmanderHead.7faed2913edb4d30061b.webp",
+    "index.html": "/hackathon-event-tool/index.html",
+    "main.907908bc.css.map": "/hackathon-event-tool/static/css/main.907908bc.css.map",
+    "main.b6fbdd71.js.map": "/hackathon-event-tool/static/js/main.b6fbdd71.js.map",
+    "592.1c7baf0f.chunk.js.map": "/hackathon-event-tool/static/js/592.1c7baf0f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.907908bc.css",
+    "static/js/main.b6fbdd71.js"
+  ]
+}
