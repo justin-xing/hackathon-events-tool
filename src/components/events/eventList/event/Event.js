@@ -7,6 +7,8 @@ import bulbasaurHead from '../../../../assets/bulbasaurHead.webp'
 import charmanderHead from '../../../../assets/charmanderHead.webp'
 import { Divider } from '@mui/material'
 
+import { getColorForEvent, getEventType, dateTimeToString } from '../../../../util/utility-functions';
+
 const Event = (props) => {
     const event = props.event
     const id = event.id
@@ -14,19 +16,6 @@ const Event = (props) => {
     const eventType = event.event_type
     const startTime = new Date(event.start_time * 1000)
     const endTime = new Date(event.end_time * 1000)
-
-    const getColorForEvent = (eventType) => {
-        switch (eventType) {
-            case "workshop":
-                return "blue"
-            case "activity":
-                return "red"
-            case "tech_talk":
-                return "green"
-            default:
-                return "yellow"
-        }
-    }
 
     const getHeadForEvent = (eventType) => {
         switch (eventType) {
@@ -39,31 +28,6 @@ const Event = (props) => {
             default:
                 return ""
         }
-    }
-
-    const getEventType = (eventType) => {
-        switch (eventType) {
-            case "tech_talk":
-                return "TECH TALK";
-            case "workshop":
-                return "WORKSHOP";
-            case "activity":
-                return "ACTIVITY";
-            default:
-                return "OTHER";
-        }
-    };
-
-    const getMinuteString = (minutes) => {
-        if (minutes == 0) {
-            return "00"
-        } else {
-            return minutes
-        }
-    }
-
-    const dateTimeToString = (date) => {
-        return `${date.toLocaleString('default', { month: 'long' })} ${date.getDate()} ${date.getHours()}:${getMinuteString(date.getMinutes())}`
     }
 
     return (

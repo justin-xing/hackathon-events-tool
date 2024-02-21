@@ -7,25 +7,13 @@ import bulbasaur from "../../../../assets/bulbasaur.png";
 import pokeball from "../../../../assets/pokeball.png";
 
 import classes from "./EventPage.module.css";
+import { getEventType, dateTimeToString } from "../../../../util/utility-functions";
 
 const EventPage = () => {
     const params = useParams();
     const id = params.id;
 
     const events = useSelector((state) => state.events.events);
-
-    const eventType = (eventType) => {
-        switch (eventType) {
-            case "tech_talk":
-                return "Tech Talk";
-            case "workshop":
-                return "Workshop";
-            case "activity":
-                return "Activity";
-            default:
-                return "Other";
-        }
-    };
 
     const getEventImage = (eventType) => {
         switch (eventType) {
@@ -55,22 +43,6 @@ const EventPage = () => {
 
     const findId = (event) => {
         return event.id == id;
-    };
-
-    const getMinuteString = (minutes) => {
-        if (minutes == 0) {
-            return "00";
-        } else {
-            return minutes;
-        }
-    };
-
-    const dateTimeToString = (date) => {
-        return `${date.toLocaleString("default", {
-            month: "long",
-        })} ${date.getDate()} ${date.getHours()}:${getMinuteString(
-            date.getMinutes()
-        )}`;
     };
 
     const convertToThreeDigitString = (num) => {
@@ -155,7 +127,7 @@ const EventPage = () => {
                                 ),
                             }}
                         >
-                            {eventType(event.event_type)}
+                            {getEventType(event.event_type)}
                         </div>
                         <div className={classes.timeCard}>
                             {dateTimeToString(startTime) +
