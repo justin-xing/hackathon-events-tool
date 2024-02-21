@@ -34,6 +34,7 @@
         flex-direction: column;
         text-align: center;
         gap: 10px;
+        min-width: 250px;
     }
     .name {
         color: black;
